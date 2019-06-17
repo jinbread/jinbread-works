@@ -3,15 +3,15 @@ import { Frame } from "framer"
 
 export default function Logo(props) {
     const animation = {
-        scale: 2,
+        scale: 1.4,
         rotate: 360,
         opacity: 1
     }
 
     const transition = {
         delay: props.delay,
-        yoyo: 2, 
-        duration: 4 - props.delay
+        yoyo: 1, 
+        duration: 4  - props.delay
     }
     
     return (
@@ -21,7 +21,7 @@ export default function Logo(props) {
             initial={{ scale: 0, opacity: 0}}
             animate={animation}
             transition={transition}
-            radius={40}
+            radius={30}
             backgroundColor={"transparent"}
             border="2px solid #9013FE"
 
